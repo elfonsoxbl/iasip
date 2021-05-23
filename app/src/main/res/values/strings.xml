@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IASIP Chooser</string>
+    <string name="episode">Episode</string>
+    <string name="season">Season</string>
+    <string name="pick">Pick Episode</string>
+    <string name="code_accepted">Code Accepted!</string>
+</resources>

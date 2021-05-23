@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#808080</color>
+    <color name="dim_grey">#696969</color>
+    <color name="grey_red">#733131</color>
+
+    <!--Season Colors-->
+    <color name="season1">#FCD90D</color>
+    <color name="season2">#41c726</color>
+    <color name="season3">#AC1D22</color>
+    <color name="season4">#FFCF34</color>
+    <color name="season5">#D2B48C</color>
+    <color name="season6">#FEE17D</color>
+    <color name="season7">#B237F4</color>
+    <color name="season8">#E39F00</color>
+    <color name="season9">#FF9191</color>
+    <color name="season10">#CDD1D2</color>
+    <color name="season11">#26FF00</color>
+    <color name="season12">#45C5F2</color>
+    <color name="season13">#723885</color>
+    <color name="season14">#001BA1</color>
+</resources>
