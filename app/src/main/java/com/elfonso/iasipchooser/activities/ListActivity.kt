@@ -9,7 +9,10 @@ import android.widget.LinearLayout
 import com.elfonso.iasipchooser.R
 import com.elfonso.iasipchooser.utils.ButtonFactory
 
-class ListActivity : AppCompatActivity() {
+class ListActivity() : AppCompatActivity() {
+    /* TODO: Make argument that passes R.array."string" and creates the buttons
+    *   Add argument to buttons that takes a string of the item in the R.array."string" and attach
+    *   the PhotoviewActivity to it.*/
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)

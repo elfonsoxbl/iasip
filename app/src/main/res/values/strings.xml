@@ -4,4 +4,7 @@
     <string name="season">Season</string>
     <string name="pick">Pick Episode</string>
     <string name="code_accepted">Code Accepted!</string>
+    <string name="title_activity_fullscreen_photoview">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
