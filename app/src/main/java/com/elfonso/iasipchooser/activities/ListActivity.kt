@@ -3,6 +3,7 @@ package com.elfonso.iasipchooser.activities
 import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.widget.LinearLayout
 
 import com.elfonso.iasipchooser.R
@@ -16,7 +17,8 @@ class ListActivity : AppCompatActivity() {
         val buttonFactory = ButtonFactory(this)
         val res: Resources = resources
         val planetButtons = buttonFactory.createButtons(res.getStringArray(R.array.planet_list))
-        val layout = findViewById<LinearLayout>(R.id.linear_layout)
+        val layout = findViewById<LinearLayout>(R.id.list_linear_layout)
+        layout.gravity = Gravity.CENTER_HORIZONTAL
         for (planet_button in planetButtons) {
             layout.addView(planet_button)
         }
