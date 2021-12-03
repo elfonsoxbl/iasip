@@ -1,12 +1,15 @@
 package com.elfonso.iasipchooser
 
 import android.content.Intent
+import android.content.res.AssetManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import androidx.core.content.ContextCompat
 import com.elfonso.iasipchooser.activities.ListActivity
+import com.elfonso.iasipchooser.activities.PlanetListActivity
 import com.elfonso.iasipchooser.codes.CodeTracker
 import com.elfonso.iasipchooser.codes.HiddenCode
 import com.elfonso.iasipchooser.picker.Picker
@@ -22,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
     private val codeTracker = CodeTracker(
         mutableListOf<HiddenCode>(
-            HiddenCode("0101", ListActivity::class.java)
+            HiddenCode("1010", PlanetListActivity::class.java)
         )
     )
 
@@ -76,6 +79,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showActivity(acceptedCode : HiddenCode) {
+        val planetNameList = this.assets.list("codelists/planets");
+        if (planetNameList != null) {
+            for (planetName in planetNameList) {
+                val planetImageList = this.assets.list("codelists/planets/${planetName}")
+                println(planetImageList.toString())
+            }
+        }
         val intent = Intent(this, acceptedCode.associatedActivity)
         startActivity(intent)
         this.showEpisode()
